@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>三宅家にゃんず簡易練習サイト</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <i id="open_menu" class="fas fa-bars"></i>
+      <nav id="menu">
+        <i id="close_menu" class="fas fa-times"></i>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sitemap.html">SiteMap</a></li>
+          <li><a href="photo.html">photo</a></li>
+        </ul>
+      </nav>
+      <h1>三宅家にゃんず<i class="fas fa-paw"></i></h1>
+    </div>
+  </header>
+
+  <section class="features">
+    <div class="container">
+      <h1 class="section-title">保護猫いっぱい三宅家</h1>
+      <section class="feature">
+        <img src="img/top-img.jpg">
+        <p>はじめまして、こんにちは。<br>猫好きが練習用で作った、猫好きサイトへようこそ。<br>三宅家で3匹と、おばあちゃん宅の猫を入れた合計5匹の保護猫と暮らしている三宅家の猫たちの紹介サイトです。<br>それぞれの猫に色々なエピソードや性格があるので、どうぞごゆるりとしていってくださいませ。</p>
+      </section>
+    </div>
+  </section>
+
+  <section class="cats">   <!-- news -->
+    <div class="container">
+      <h1 class="section-title">にゃんず紹介</h1>
+      <div class="flex">
+        <article class="cat-item">
+          <img src="img/ron-icon.jpg">
+          <h3>ろん</h3>
+          <p></p>
+        </article>
+        <article class="cat-item">
+          <img src="img/kuro-icon.jpg">
+          <h3>くろ</h3>
+          <p></p>
+        </article>
+        <article class="cat-item">
+          <img src="img/chibi-icon.jpg">
+          <h3>ちび</h3>
+          <p></p>
+        </article>
+        <article class="cat-item">
+          <img src="img/annkina-icon.jpg">
+          <h3>あんこ＆きなこ</h3>
+          <p></p>
+        </article>
+      </div>
+    </div>
+    <div class="photo-guide">
+      <p>にゃんずの写真館も合わせてどうぞ</p>
+      <a href="photo.html" class="btn photo">写真館へ</a>
+    </div>
+  </section>
+
+  <section class="how-to-use">
+    <div class="container">
+      <h1 class="section-title">保護猫飼育の動画紹介</h1>
+      <div class="iframe-wrapper">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/nEccxK0IBio" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; もちこ
+  </footer>
+
+  <script>
+    (function() {
+      'use strict';
+
+      var openMenu = document.getElementById('open_menu');
+      var closeMenu = document.getElementById('close_menu');
+      var menu = document.getElementById('menu');
+
+      openMenu.addEventListener('click', function() {
+        menu.classList.add('shown');
+      });
+
+      closeMenu.addEventListener('click', function() {
+        menu.classList.remove('shown');
+      });
+    })();
+  </script>
+</body>
+</html>
